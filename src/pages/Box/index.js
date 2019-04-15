@@ -45,6 +45,8 @@ export default class Box extends Component {
 
       data.append("file", file);
 
+      console.log("data: ", data);
+
       api.post(`boxes/${box}/files`, data);
     });
   };
