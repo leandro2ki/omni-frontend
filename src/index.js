@@ -1,7 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import AppTestAB from "./AppTestAB";
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import App from './AppLocalStorage';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<AppTestAB />, document.getElementById("root"));
+import App from './AppCookie';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
