@@ -10,6 +10,9 @@ function App() {
   const getJwt = async () => {
     const { data } = await axios.get(`${apiUrl}/jwt`, {
       withCredentials: true,
+      headers: {
+        AuthSafy: 'uahsoiudhfuahsd',
+      },
     });
     setJwt(data.token);
   };
