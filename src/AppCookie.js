@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const apiUrl = 'http://localhost:3001';
+const apiUrl = 'https://omnistack-backend-1.herokuapp.com/';
 
 function App() {
   const [jwt, setJwt] = useState(null);
