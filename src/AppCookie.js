@@ -10,6 +10,9 @@ function App() {
   const getJwt = async () => {
     const { data } = await axios.get(`${apiUrl}/jwt`, {
       withCredentials: true,
+      headers: {
+        AuthSafy: 'uahsoiudhfuahsd',
+      },
     });
     setJwt(data.token);
   };
@@ -18,8 +21,8 @@ function App() {
     try {
       const { data } = await axios.get(`${apiUrl}/foods`, {
         withCredentials: true,
-        params: {
-          user: 'teste',
+        headers: {
+          CustomHeader: 'uahsoiudhfuahsd',
         },
       });
       setFoods(data);
